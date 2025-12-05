@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "RU");
+	using namespace std;
+
+	string pas = "12345";
+	string pas2;
+
+	while (true) {
+		cout << "ведите пароль: ";
+		cin >> pas2;
+		
+		if (pas == pas2) {
+			break;
+		}
+		else {
+			cout << "неверный пароль" << endl;
+		}
+	}
+	cout << "добро пожаловать";
+}
