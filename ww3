@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "RU");
+	using namespace std;
+
+	int num1 = 1;
+	int sum = 0;
+	int count = 0;
+
+	while (num1 != 0) {
+		cout << "ведите число: ";
+		cin >> num1;
+		if (num1 > 0) {
+			sum += num1;
+			count++;
+		}
+		else if (num1 <= -1) {
+			cout << "ведите число больше 0!!!!!!!!!!!!" << endl;
+		}
+	}
+
+	cout << "кол-во чисел: " << count << endl << "cумма: " << sum;
+}
