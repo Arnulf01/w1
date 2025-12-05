@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "RU");
+	using namespace std;
+
+	int num1 = 1;
+	int num2 = 0;
+
+
+	while (num1 != 0) {
+		cout << "ведите число: ";
+		cin >> num1;
+		num2 += num1;
+	}
+	cout << "получилось: " << num2;
+}
