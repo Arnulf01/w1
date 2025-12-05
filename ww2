@@ -5,13 +5,22 @@ int main() {
 	using namespace std;
 
 	int num1 = 1;
+	while (true) {
+		cout << "ведите число для отсчета: ";
+		cin >> num1;
 
-	cout << "ведите число для отсчета: ";
-	cin >> num1;
+		if (num1 <= 0) {
+			cout << "это число не подходит" << endl;
+		}
 
-	while (num1 != 0) {
-		cout << num1 << endl;
-		num1--;
+		else if (num1 > 0) {
+			while (num1 != 0) {
+				cout << num1 << endl;
+				num1--;
+			}
+			break;
+		}
 	}
+
 	cout << "старт";
 }
